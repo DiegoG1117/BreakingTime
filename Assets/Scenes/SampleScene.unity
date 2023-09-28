@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 611116980}
   - component: {fileID: 611116979}
   - component: {fileID: 611116983}
+  - component: {fileID: 611116984}
   m_Layer: 0
   m_Name: CreadorKnight
   m_TagString: Untagged
@@ -503,7 +504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611116977}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -14.96, y: -4.35, z: 2}
+  m_LocalPosition: {x: -14.96, y: -4.35, z: 0}
   m_LocalScale: {x: 2.95341, y: 2.95341, z: 2.95341}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -520,7 +521,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.022381544, y: 0.063076675}
@@ -536,6 +537,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3785615, y: 0.39483893}
   m_EdgeRadius: 0
+--- !u!114 &611116984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611116977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50016115683f467f8b6587feaaeb757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669168963
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669168963}
   m_LocalRotation: {x: -0, y: -0, z: 0.17241529, w: 0.98502433}
-  m_LocalPosition: {x: 4.24, y: -1.84, z: 0}
+  m_LocalPosition: {x: 4.24, y: -1.89, z: 0}
   m_LocalScale: {x: 5.6809, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -951,7 +964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129941649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.15, y: 0.088, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -970,6 +983,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cc640ebbe2ea40d09fb4857d45c9cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1154359913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154359915}
+  - component: {fileID: 1154359914}
+  m_Layer: 0
+  m_Name: Punto1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1154359914
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154359913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08447647, y: 0.10981965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.35797882, y: 1.3210113}
+  m_EdgeRadius: 0
+--- !u!4 &1154359915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154359913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.47, y: -0.24, z: -9.908327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295721683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1212,7 @@ GameObject:
   - component: {fileID: 1773745220}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Camino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,7 +1230,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.0017801523}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1170,7 +1241,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.9964397}
   m_EdgeRadius: 0
 --- !u!212 &1773745221
 SpriteRenderer:
@@ -1232,7 +1303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773745219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -3.8734, z: 2}
+  m_LocalPosition: {x: -0.11, y: -3.8734, z: 0}
   m_LocalScale: {x: 22.949463, y: 2.3178277, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1252,9 +1323,10 @@ GameObject:
   - component: {fileID: 1823269404}
   - component: {fileID: 1823269407}
   - component: {fileID: 1823269409}
+  - component: {fileID: 1823269410}
   m_Layer: 0
   m_Name: KnightEnemigo
-  m_TagString: Untagged
+  m_TagString: EnemigoKnight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1340,7 +1412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823269403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0198402, y: -1.2031595, z: 0}
+  m_LocalPosition: {x: -8.79, y: -2.38, z: 0}
   m_LocalScale: {x: 2.95341, y: 2.95341, z: 2.95341}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1395,6 +1467,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1823269410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823269403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2864f728aaec419ca8515e1bc4374fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetivo: {fileID: 1154359915}
+  velocidad: 1
 --- !u!1 &1995042617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,7 +1560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995042617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6, y: -3.89, z: 1}
+  m_LocalPosition: {x: -8.95, y: -3.89, z: -1}
   m_LocalScale: {x: 1.0246439, y: 1.9268721, z: 0.90277}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1626,7 +1712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127797119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.71, y: -0.88, z: 0}
+  m_LocalPosition: {x: 7.71, y: -0.96, z: 0}
   m_LocalScale: {x: 1.7042701, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
