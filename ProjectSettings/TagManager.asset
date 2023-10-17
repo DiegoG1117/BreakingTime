@@ -10,16 +10,16 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - jugador
+  - EnemigoCarril3
   - Water
   - UI
-  - Escalera2Nivel
-  - Enemigo2Nivel
-  - Escalera3Nivel
-  - Enemigo3Nivel
-  - Escalera1Nivel
-  - 
-  - 
+  - Escalera2Carril3
+  - Enemigo2Carril3
+  - Escalera3Carril3
+  - Enemigo3Carril3
+  - Escalera1Carril3
+  - Escalera1Carril1
+  - EnemigoCarril1
   - 
   - 
   - 
