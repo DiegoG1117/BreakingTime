@@ -8,6 +8,7 @@ public class MovimientoEnemigo : MonoBehaviour
     public Transform segundoObjetivo; // El segundo objetivo al que se dirigirá después de la colisión con el primer objetivo
     public Transform tercerObjetivo; // El tercer objetivo al que se dirigirá después de la colisión con el segundo objetivo
     public Transform cuartoObjetivo; // El tercer objetivo al que se dirigirá después de la colisión con el segundo objetivo
+    public Transform quintoObjetivo; // El tercer objetivo al que se dirigirá después de la colisión con el segundo objetivo
     public float velocidad = 5f; // La velocidad de movimiento
     public float distanciaSuelo = 0.1f; // Distancia mínima desde el suelo
     public GameObject enemigo;
@@ -42,8 +43,7 @@ public class MovimientoEnemigo : MonoBehaviour
         }
         }
         // TERCER CARRIL MOVIMIENTO ENEMIGO
-        if (gameObject.layer == LayerMask.NameToLayer("EnemigoCarril3")){
-        if (direccion == 1)
+        if (direccion == 1 && gameObject.layer == LayerMask.NameToLayer("EnemigoCarril3"))
         {
             // Calcula la dirección hacia el primer objetivo
             Vector2 direccion = (Primerobjetivo.position - transform.position).normalized;
@@ -57,7 +57,7 @@ public class MovimientoEnemigo : MonoBehaviour
             // Aplica la nueva posición
             rb.MovePosition(nuevaPosicion);
         }
-        }
+        
         if(direccion == 2 && gameObject.layer == LayerMask.NameToLayer("Enemigo2Carril3"))
         {
             // Calcula la dirección hacia el siguiente objetivo
@@ -82,7 +82,18 @@ public class MovimientoEnemigo : MonoBehaviour
             Vector2 nuevaPosicion = (Vector2)transform.position + direccion * velocidad * Time.deltaTime;
             rb.MovePosition(nuevaPosicion);
         }
-        
+          if(direccion == 2 && gameObject.layer == LayerMask.NameToLayer("Enemigo2Carril1"))
+        {
+            // Calcula la dirección hacia el siguiente objetivo
+            Vector2 direccion = (quintoObjetivo.position - transform.position).normalized;
+
+            // Lanza un rayo hacia abajo para detectar la posición del suelo
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distanciaSuelo);
+
+            // Mueve el personaje hacia el siguiente objetivo
+            Vector2 nuevaPosicion = (Vector2)transform.position + direccion * velocidad * Time.deltaTime;
+            rb.MovePosition(nuevaPosicion);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -90,7 +101,7 @@ public class MovimientoEnemigo : MonoBehaviour
         if (collision.transform == Primerobjetivo)
         {
             // Cambia el Layer del personaje al Layer "Enemigo2Nivel"
-            enemigo.layer = LayerMask.NameToLayer("Enemigo2Carril3");
+            enemigo.layer = LayerMask.NameToLayer("Enemigo2Carril1");
 
             // Cambia la dirección en el eje X por 180 grados
             Vector3 nuevaRotacion = transform.eulerAngles;
@@ -109,5 +120,17 @@ public class MovimientoEnemigo : MonoBehaviour
             transform.eulerAngles = nuevaRotacion;
             direccion = 3; 
         }
+        if (collision.transform == cuartoObjetivo)
+        {
+            // Cambia el Layer del personaje al Layer "Enemigo3Nivel"
+            enemigo.layer = LayerMask.NameToLayer("Enemigo2Carril1");
+
+            // Cambia la dirección en el eje X por 0 grados (dirección original)
+            Vector3 nuevaRotacion = transform.eulerAngles;
+            nuevaRotacion.y += 180f;
+            transform.eulerAngles = nuevaRotacion;
+            direccion = 2; 
+        }
+        
     }
 }
