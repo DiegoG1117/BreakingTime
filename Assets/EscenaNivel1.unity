@@ -3599,7 +3599,7 @@ GameObject:
   - component: {fileID: 1823269409}
   - component: {fileID: 1823269410}
   - component: {fileID: 1823269411}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: KnightEnemigo
   m_TagString: EnemigoKnight
   m_Icon: {fileID: 0}
