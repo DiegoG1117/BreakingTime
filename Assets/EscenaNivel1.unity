@@ -2029,7 +2029,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.43137255}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2047,8 +2047,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757719558}
   m_LocalRotation: {x: -0, y: -0, z: 0.18509567, w: 0.98272055}
-  m_LocalPosition: {x: -10.58, y: -1.76, z: -3}
-  m_LocalScale: {x: 2.904261, y: 0.2024, z: 1}
+  m_LocalPosition: {x: -10.62, y: -1.77, z: -3}
+  m_LocalScale: {x: 2.9719305, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1651285490}
@@ -2743,7 +2743,7 @@ Transform:
   m_GameObject: {fileID: 1205649930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.292, y: -1.241, z: -3}
-  m_LocalScale: {x: 1.9525756, y: 0.2024, z: 1}
+  m_LocalScale: {x: 1.9281684, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1651285490}
@@ -2893,7 +2893,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.052918434, g: 0, b: 1, a: 0.53333336}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4453,7 +4453,7 @@ MonoBehaviour:
   septimoObjetivo: {fileID: 1008387936}
   octavoObjetivo: {fileID: 61991434}
   novenoObjetivo: {fileID: 1994601613}
-  velocidad: 10
+  velocidad: 3
   distanciaSuelo: 0
   enemigo: {fileID: 1823269403}
 --- !u!61 &1823269411
@@ -5194,7 +5194,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.56078434}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
