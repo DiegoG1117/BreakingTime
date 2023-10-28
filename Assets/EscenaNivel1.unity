@@ -3080,7 +3080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370862171}
   m_LocalRotation: {x: -0, y: -0, z: 0.20726652, w: -0.97828454}
-  m_LocalPosition: {x: -9.81, y: -4.87, z: -3}
+  m_LocalPosition: {x: -9.818, y: -4.876, z: -3}
   m_LocalScale: {x: 3.67077, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4184,7 +4184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719935468}
   m_LocalRotation: {x: -0, y: -0, z: -0.21888055, w: -0.97575164}
-  m_LocalPosition: {x: -14.351999, y: -4.8999996, z: -3}
+  m_LocalPosition: {x: -14.37, y: -4.91, z: -3}
   m_LocalScale: {x: 3.6707702, y: 0.2024, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4423,7 +4423,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 0.7
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -4454,7 +4454,7 @@ MonoBehaviour:
   octavoObjetivo: {fileID: 61991434}
   novenoObjetivo: {fileID: 1994601613}
   velocidad: 10
-  distanciaSuelo: 0.2
+  distanciaSuelo: 0
   enemigo: {fileID: 1823269403}
 --- !u!61 &1823269411
 BoxCollider2D:
