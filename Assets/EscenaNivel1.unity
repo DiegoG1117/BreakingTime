@@ -4274,6 +4274,7 @@ MonoBehaviour:
   Amedieval: {fileID: 366730168}
   Aguerra: {fileID: 567495155}
   Afuturista: {fileID: 172034597}
+  tiempoText: {fileID: 1047252406}
 --- !u!4 &1617792489
 Transform:
   m_ObjectHideFlags: 0
