@@ -2984,6 +2984,7 @@ MonoBehaviour:
   Amedieval: {fileID: 0}
   Aguerra: {fileID: 0}
   Afuturista: {fileID: 0}
+  tiempoText: {fileID: 0}
 --- !u!4 &1617792489
 Transform:
   m_ObjectHideFlags: 0
@@ -3603,7 +3604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823269403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.19, y: -3.3100002, z: 1.89}
+  m_LocalPosition: {x: -14.106, y: -3.31, z: 1.89}
   m_LocalScale: {x: 2.961384, y: 2.95341, z: 2.95341}
   m_ConstrainProportionsScale: 0
   m_Children: []
