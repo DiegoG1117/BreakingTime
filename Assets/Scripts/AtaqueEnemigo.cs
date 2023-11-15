@@ -8,7 +8,7 @@ public class AtaqueEnemigo : MonoBehaviour
 
     [SerializeField] private float radioGolpe;
 
-    [SerializeField] private float dañoGolpe;
+    [SerializeField] private float daÃ±oGolpe;
 
     private void Update()
     {
@@ -27,7 +27,7 @@ public class AtaqueEnemigo : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);  
+                colisionador.transform.GetComponent<Enemigo>().TomarDaÃ±o(daÃ±oGolpe);  
             }
         }
     }
