@@ -7,8 +7,7 @@ public class EnemigoAtaque : MonoBehaviour
     public Animator animator;
     public int estado;
 
-    // Este es el nuevo AnimatorController que quieres asignar cuando haya colisión
-    public RuntimeAnimatorController nuevoController;
+
 
     void Start()
     {
@@ -22,6 +21,7 @@ public class EnemigoAtaque : MonoBehaviour
         // Verifica si la colisión es con el objeto deseado
         if (other.CompareTag("Defensor"))
         {
+                Debug.Log("SI SE DETECTO MALDITASEA ");
                 estado = 1;
                 animator.SetInteger("Estado", estado); 
         }
