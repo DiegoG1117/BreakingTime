@@ -5,31 +5,33 @@ using UnityEngine;
 public class AtaqueEnemigo : MonoBehaviour
 {
     [SerializeField] private Transform controladorGolpe;
-
     [SerializeField] private float radioGolpe;
-
     [SerializeField] private float dañoGolpe;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        // No necesitas el código de golpe en el Update si estás usando OnTriggerEnter2D
+        // Mantén esto solo si quieres un ataque manual también
+        // if (Input.GetButtonDown("Fire1"))
+        // {
+        //     Golpe();
+        // }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Colisión detectada");
+        if (other.CompareTag("EnemigoKnight"))
         {
-            Golpe();
+            // Atacar automáticamente cuando el jugador se acerca al enemigo
+            Golpe(other.gameObject);
         }
     }
 
-    // Update is called once per frame
-    private void Golpe()
+    private void Golpe(GameObject enemigo)
     {
-        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe); 
-
-        foreach (Collider2D colisionador in objetos)
-        {
-            if (colisionador.CompareTag("Enemigo"))
-            {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);  
-            }
-        }
+        Debug.Log("Golpeando al enemigo");
+        enemigo.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
     }
 
     private void OnDrawGizmos()
